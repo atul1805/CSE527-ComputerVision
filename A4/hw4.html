@@ -1,0 +1,487 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="hw3.files/filelist.xml">
+<link rel=Edit-Time-Data href="hw3.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>CSE527 Homework 4</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Hojin Choi</o:Author>
+  <o:LastAuthor>Hojin Choi</o:LastAuthor>
+  <o:Revision>39</o:Revision>
+  <o:TotalTime>30</o:TotalTime>
+  <o:Created>2012-10-16T19:56:00Z</o:Created>
+  <o:LastSaved>2013-10-03T22:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1163</o:Words>
+  <o:Characters>6631</o:Characters>
+  <o:Lines>55</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7779</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>130</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--ol
+	{list-style-type:lower-latin;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:Batang;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 3.0cm 3.0cm 3.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:187180567;
+	mso-list-template-ids:392722740;}
+@list l0:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:434054665;
+	mso-list-template-ids:-972890166;}
+@list l1:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1805851655;
+	mso-list-template-ids:-599620430;}
+@list l2:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"\D45C\C900 \D45C";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<meta name=Author content="Dimitris Samaras">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=KO link=blue vlink=blue style='tab-interval:40.0pt'>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'><span lang=EN-US>CSE527 Homework 4</span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>Due
+Thu Nov 12, 2015</span></p>
+
+<h2><span lang=EN-US>1. Pinhole camera model</span></h2>
+
+<p><span lang=EN-US>The figure below shows a typical pinhole camera model. We
+construct a camera frame of reference centered at the focal point of the camera
+with the z axis along the principal optical axis of the device. The focal
+length of this camera, f, is 8mm, the CCD sensor on the focal plane is 4mm wide
+and 3mm tall as shown. The sensor is divided into a grid of 800 pixels in the x
+direction and 600pixels in the y direction. The center of the imaging array
+corresponds to the point where the optical axis cuts the focal plane. The pixel
+coordinates are indexed from the bottom right hand corner as shown.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><img
+width=693 height=192 id="_x0000_i1025" src=hw4a.gif alt=fig1></span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><span lang=EN-US>{5 pts}
+     Compute the matrix of intrinsic parameters which relates the coordinates
+     of features given with respect to the camera frame to the pixel
+     coordinates of the projection of that point on the sensor. That is give an
+     A such that:</span></li>
+</ol>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:36.0pt;text-align:center'><span lang=EN-US><img width=84
+height=69 id="_x0000_i1026" src=hw4b.gif alt=fig2></span></p>
+
+<ol start=2 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><span lang=EN-US>{10 pts}
+     Consider a wireframe cube 2 meters on side that is initially centered and
+     axis-aligned with the cameras frame of reference;&nbsp;that is, initially
+     the frame of reference of the cube and the frame of reference of the
+     camera are initially coincident. Now consider what would happen if we
+     first rotated the cube about the axis (3,4,-1) by 60 degrees then
+     translated it by +10 meters along the z-axis (remember to normalize the
+     axis to unit length). Use Matlab to compute the 4x4 matrix which
+     represents the transformation from the blocks new frame of reference to
+     the camera frame. Use the quaternion representation for the rotation.</span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><span lang=EN-US>{10 pts}
+     Use your answers above to compute where the vertices of the cube would
+     appear on the image in pixel coordinates. Plot these vertices in Matlab
+     and connect the vertices by line segments using Matlab’s line command.</span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><span lang=EN-US>{5 pts}
+     Find out where the points at infinity corresponding to the x, y and z
+     directions of the cubes new frame of reference would project onto the
+     image.</span></li>
+</ol>
+
+<h2><span lang=EN-US>2. Camera calibration</span></h2>
+
+<p><span lang=EN-US>A fixed camera views a table of variable height,
+illuminated by a projector that projects a cross-pattern onto the table. The
+system is to be calibrated by adjusting the height of the table to heights of
+precisely 50mm, 100mm, and 200mm. At each of these heights, the center of the
+cross-pattern is measured in images at the following positions (in pixels): (u,
+v) = (100, 250), (140, 340), and (200, 450), respectively. Notice that the
+projected ray of light has the same algebraic representation as the ray imaging
+to a camera. To simplify matters, choose a convenient world frame.</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>{5 pts}
+     What are the</span></li>
+ <ol start=1 type=i>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo2;tab-stops:list 72.0pt'><span lang=EN-US>perspective
+      projection camera model and the</span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo2;tab-stops:list 72.0pt'><span lang=EN-US>projective
+      camera model,</span></li>
+ </ol>
+</ol>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt'><span lang=EN-US>specialized for this particular problem
+configuration? Give your answer as equations using homogeneous coordinates that
+show how a scene point is mapped to an image point.</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>{5 pts} In
+     the projective camera model you defined in (a), how many degrees of
+     freedom are there in order to calibrate this system?</span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>{10 pts}
+     Compute all of the calibration parameters for this problem (use your
+     projective camera model from (a)). Hint: Convert the problem to the form
+     Ax=b where x is a column vector of all the unknowns, and use Matlab to
+     solve for the linear least squares solution. For example, in Matlab
+     entering A = [1 2 3;4 5 6;7 8 0], then b = [366;804;351] and finally entering
+     x = A\b will compute and print the solution x = 25.0 22.0 99.0. For this
+     problem you ll need to compute the singular value decomposition (SVD) of A
+     and print the eigenvector corresponding to the smallest eigenvalue; you
+     can use the operators eig or eigs, e.g., [V,D]=eigs(A), for this purpose.</span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>{10 pts}
+     Recover the height of the table when the cross is measured in three new
+     images at the following pixel coordinates. Show how you obtained your
+     answers as well. </span></li>
+ <ol start=1 type=i>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo2;tab-stops:list 72.0pt'><span lang=EN-US>(130,
+      310)</span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo2;tab-stops:list 72.0pt'><span lang=EN-US>(170,
+      380)</span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo2;tab-stops:list 72.0pt'><span lang=EN-US>(190,
+      300)</span></li>
+ </ol>
+</ol>
+
+<h2><span lang=EN-US>3. Image mosaicing</span></h2>
+
+<p><span lang=EN-US>In general, two pictures taken by a camera that rotates
+about an axis will be related by a 2D projective transformation. You will
+implement a program that performs image mosaicing (read the <a
+href="mosaics.pdf">Szeliski paper</a>) and goes through the following steps:</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>Image
+     acquisition:&nbsp;You can find a set of 4 test images from the former
+     humanities building <a href="humanity/">here</a>. Alternatively, if you
+     successfully complete the mosaic with your own images, you will receive
+     extra credit {5 pts}. Remember to rotate your camera around a single axis.
+     <a href="mosaic/">Here's an example of mosaics</a> that can be created.
+     All images are courtesy of Prof. Oliveira.</span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>Image
+     warping: Supposing that you have two input images, projectively warp img1
+     so that the portions of img1 that overlap with img2 are correctly aligned.
+     </span></li>
+ <ol start=1 type=i>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l1 level2 lfo3;tab-stops:list 72.0pt'><span lang=EN-US>{10
+      points} Write out the equation of the linear system that your
+      implementation is solving. All coefficients &amp; constants in the system
+      must be expressed in terms of the image coordinates of the user-specified
+      feature points. You may assume that the user selects only the minimum
+      number of feature points necessary for warping.</span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l1 level2 lfo3;tab-stops:list 72.0pt'><span lang=EN-US>{10
+      points} Implement a function [A] = ComputeWarpMapping(img1pts, img2pts),
+      where A is the projective transformation matrix. You can use SVD or
+      Matlab's matrix division to solve it, but cannot use a built-in function
+      to solve for the projection. To get good alignment results you need to
+      choose your feature points with some care. Here are a few suggestions on
+      what constitutes a 'good' set of feature points: While in theory 4 points
+      are sufficient, you should choose more points, probably around 6-10
+      points. Try to distribute the feature points throughout the area of
+      overlap between the two images. Avoid 'degenerative' point configurations
+      (e.g., all points along a single line, all points very close to each
+      other). Try to choose feature points that are very distinctive from their
+      surroundings, since they will make localization easy in the other image.</span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l1 level2 lfo3;tab-stops:list 72.0pt'><span lang=EN-US>{10
+      points} Once the 2D projective map is computed, you can use it to warp
+      image img1 so that it becomes aligned with img2. To do this, you need to
+      implement a function [img1warp] = WarpImage(img1, A) that takes an image
+      img1 and the matrix A describing the 2D projective warp and returns a new
+      image, img1warp, that warps img1 according to A. You should use the
+      backward mapping algorithm to implement this warp.</span></li>
+ </ol>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>Merging
+     the two Images {10 points}: To compute the final mosaic, you simply need
+     to copy all pixels of img2 directly into a copy of img1warp. For every
+     pixel in the region of overlap, use the average color between img1 and
+     img2 for the pixel's final color.</span></li>
+</ol>
+
+<h2><span lang=EN-US>4. Image mosaicing with SIFT (Extra credit)</span></h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:18.0pt'><span lang=EN-US>{20 points} Implement a mosaic program
+similar to that in problem 3, but with SIFT descriptors instead of using
+user-defined points. You will detect SIFT points in the input images and use
+RANSAC to find matches between those points. After that, you can calculate the
+transformation matrix accordingly. For details, use <a href="07brown.pdf">this
+paper</a> as guideline.</span></p>
+
+<h2><span lang=EN-US>Submission</span></h2>
+
+<p><span lang=EN-US>You will submit a report file which describes all the
+answers to the questions and Matlab codes you implemented. PDF format is
+preferred for the report format. Submit a compressed archive (e.g., zip,
+tar.gz, rar) that include all of your files. </span></p>
+
+<p><span lang=EN-US>You are free to include your codes in the report, but
+whether you do or don’t, you MUST submit all codes in separate Matlab .m files.
+Also, if you have a Matlab figure file that is large in size, do not submit the
+figure but instead hand in the Matlab code that can generate the figure.</span></p>
+
+<p><span lang=EN-US>Late submission policy: you will lose 10 points for every
+one day past deadline.</span></p>
+
+</div>
+
+</body>
+
+</html>

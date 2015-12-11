@@ -1,0 +1,79 @@
+I=im2double(rgb2gray(imread('..\..\JS.jpg')));
+[ pos, scale, orient, desc ] = SIFT(I,4,2,ones(size(I)),0.02,10,2);
+database = add_descriptors_to_database( I, pos, scale, orient, desc);
+
+A = [[0.5,-sqrt(3)/2,100];[sqrt(3)/2,0.5,200]];
+Inew = imWarpAffine(I,A,1);
+[ posn, scalen, orientn, descn ] = SIFT(Inew,4,2,ones(size(Inew)),0.02,10,2);
+
+[IM_IDX, TRANS, THETA, RHO, DESC_IDX, NN_IDX, WGHT] = hough( database, posn, scalen, orientn, descn, 1.5, 0 );
+Anew = fit_robust_affine_transform(posn(DESC_IDX{7},:)',pos(NN_IDX{7},:)')
+
+
+    0.4998   -0.8632   99.7996
+    0.8652    0.5026  199.8163
+         0         0    1.0000
+
+    0.5000   -0.8660  100.0000
+    0.8660    0.5000  200.0000
+         0         0    1.0000
+		 
+		 
+		 
+I1=im2double(rgb2gray(imread('..\..\Q1.jpg')));
+I2=im2double(rgb2gray(imread('..\..\Q2.jpg')));
+[ pos1, scale1, orient1, desc1 ] = SIFT(I1,4,2,ones(size(I1)),0.02,10,2);
+database = add_descriptors_to_database( I1, pos1, scale1, orient1, desc1);
+[ pos2, scale2, orient2, desc2 ] = SIFT(I2,4,2,ones(size(I2)),0.02,10,2);
+[IM_IDX, TRANS, THETA, RHO, DESC_IDX, NN_IDX, WGHT] = hough( database, pos2, scale2, orient2, desc2, 1.5, 0 );
+fit_robust_affine_transform(pos2(DESC_IDX{11},:)',pos1(NN_IDX{11},:)');
+
+    0.7832   -0.8220   92.8190
+    0.7152    0.7324  -26.7111
+         0         0    1.0000
+		 
+		 
+phoneM=im2double(imread('..\..\3\phone0003.pgm'));
+[ pos1, scale1, orient1, desc1 ] = SIFT(phoneM,4,2,ones(size(phoneM)),0.02,10,2);
+wadhamM=im2double(imread('..\..\3\wadham003.pgm'));
+[ pos2, scale2, orient2, desc2 ] = SIFT(wadhamM,4,2,ones(size(wadhamM)),0.02,10,2);
+database = add_descriptors_to_database( phoneM, pos1, scale1, orient1, desc1);
+database = add_descriptors_to_database( wadhamM, pos2, scale2, orient2, desc2,database);
+
+phone 002
+    1.5047   -0.0042   32.4012
+   -0.0924    1.3642  -39.1067
+         0         0    1.0000
+phone003
+    0.6826    0.5472  -13.0605
+   -0.4761    0.7004  256.0867
+         0         0    1.0000
+phone004
+    0.7430    0.4516  -27.0637
+   -0.4122    0.7684  192.2528
+         0         0    1.0000
+phone005
+    0.7801    0.6036  -70.8192
+   -0.4969    0.8581  236.0779
+         0         0    1.0000
+nutshell002
+   -1.1490    0.0828  756.5938
+    0.1624   -1.2792  467.0977
+         0         0    1.0000
+nutshell003
+   -1.3065    0.2254  563.3894
+   -0.1793   -1.5063  661.9360
+         0         0    1.0000
+nutshell004
+
+   -0.9229   -0.2070  631.3198
+    0.0636   -1.0480  447.5176
+         0         0    1.0000
+nutshell005
+
+
+
+
+
+192 258
+

@@ -1,0 +1,34 @@
+Matlab Scripts written By us:
+
+LoadData.m
+demo/BinaryCRBM.m
+result.m
+calc_map.m
+
+Matlab Scripts:
+    1. Run LoadData.m -> The script saves a mat file called 'data.mat' of size 13x1. Each cell has data for the
+                         corresponding experiment. Images are of size 128x128 and each image has multiple labels
+                         associated with it.
+                         data.mat -> images 
+                                            13 cells of image data
+                                            each cell -> (imageCountx3) cells
+                                            each of these cells -> image name, image data(128x128), tags
+                                     tags
+                                            size -> 98x2
+                                            each cell -> tag number, tag name
+    
+    2. BinaryCRBM     -> Extracts features from 'data.mat'. It uses these features to train and predict using SVM's.
+                         It employs 13 fold cross validation and trains 98 SVM models per test set. It saves the
+                         results as 'finalResult128.mat'.
+
+    3. result.m       -> It calculates the confusion matrix, precision and recall for each tag acroos all test runs.
+                         Results can be viewed in stats variable.
+
+    4. calc_map.m     -> This script calculates the mean average precision for each of the 98 tags.
+
+To run the code:
+    Step 1: Run LoadData.m
+    Step 2: Run startLearning.m (sets paths for CRBM)
+    Step 3: Run demo/BinaryCRBM.m
+    Step 4: Run result.m (to get precison and recall for each tag)
+    Step 5: Run calc_map.m (for map values)
